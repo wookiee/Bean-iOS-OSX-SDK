@@ -1,4 +1,6 @@
 machine:
+  xcode:
+    version: '7.0'
   environment:
     CODE_SIGNING_REQUIRED: NO
 
@@ -6,6 +8,10 @@ checkout:
   post:
     - git submodule sync
     - git submodule update --init
+
+dependencies:
+  pre:
+    - brew install xctool
 
 test:
   override:
