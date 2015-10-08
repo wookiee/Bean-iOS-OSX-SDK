@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GattSerialProfile.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GattSerialProfile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialProfile.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialProfile/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattSerialProfileDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialProfile/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattSerialProfileDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GattSerialProfile/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattSerialProfileDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialProfile/initWithPeripheral:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialProfile.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPeripheral:(CBPeripheral *)peripheral delegate:(id&lt;GattSerialProfileDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPeripheral:delegate:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialProfile/sendMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialProfile.h</DeclaredIn>
+			
+			<Declaration>- (void)sendMessage:(GattSerialMessage *)message</Declaration>
+			
+			
+			<Anchor>//api/name/sendMessage:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GattSerialTransport.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GattSerialTransport</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialTransport/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattSerialTransportDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialTransport/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattSerialTransportDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GattSerialTransport/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattSerialTransportDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialTransport/initWithGattTransport:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithGattTransport:(GattTransport *)transport</Declaration>
+			
+			
+			<Anchor>//api/name/initWithGattTransport:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialTransport/sendMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+			
+			<Declaration>- (void)sendMessage:(GattSerialMessage *)message</Declaration>
+			
+			
+			<Anchor>//api/name/sendMessage:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

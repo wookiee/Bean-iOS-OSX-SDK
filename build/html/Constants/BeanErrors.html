@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BeanErrors Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Bean iOS/OSX SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Punch Through Design</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BeanErrors Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>PTDBean.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">BeanErrors</h3>
+                    
+					
+					<div class="section section-overview">
+                        <ul>
+<li>Error states returned by <a href="../Protocols/PTDBeanDelegate.html">PTDBeanDelegate</a> bean:error:</li>
+</ul>
+
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, BeanErrors ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">BeanErrors_InvalidArgument</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">BeanErrors_BluetoothNotOn</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">BeanErrors_NotConnected</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">BeanErrors_NoPeriphealDiscovered</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">BeanErrors_AlreadyConnected</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">BeanErrors_AlreadyConnecting</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">BeanErrors_DeviceNotEligible</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">BeanErrors_FailedDisconnect</a>,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="BeanErrors_InvalidArgument"></a><code>BeanErrors_InvalidArgument</code></dt>
+<dd>
+
+
+<p>An input argument was invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">PTDBean.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="BeanErrors_BluetoothNotOn"></a><code>BeanErrors_BluetoothNotOn</code></dt>
+<dd>
+
+
+<p>Bluetooth is not turned on</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">PTDBean.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="BeanErrors_NotConnected"></a><code>BeanErrors_NotConnected</code></dt>
+<dd>
+
+
+<p>The bean is not connected</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">PTDBean.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="BeanErrors_NoPeriphealDiscovered"></a><code>BeanErrors_NoPeriphealDiscovered</code></dt>
+<dd>
+
+
+<p>No Peripheral discovered with corresponding UUID</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">PTDBean.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="BeanErrors_AlreadyConnected"></a><code>BeanErrors_AlreadyConnected</code></dt>
+<dd>
+
+
+<p>Device with UUID already connected to this Bean</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">PTDBean.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="BeanErrors_AlreadyConnecting"></a><code>BeanErrors_AlreadyConnecting</code></dt>
+<dd>
+
+
+<p>A device with this UUID is in the process of being connected to</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">PTDBean.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="BeanErrors_DeviceNotEligible"></a><code>BeanErrors_DeviceNotEligible</code></dt>
+<dd>
+
+
+<p>The device&rsquo;s current state is not eligible for a connection attempt</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">PTDBean.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="BeanErrors_FailedDisconnect"></a><code>BeanErrors_FailedDisconnect</code></dt>
+<dd>
+
+
+<p>No device with this UUID is currently connected</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">PTDBean.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">PTDBean.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Punch Through Design. All rights reserved. Updated: 2015-10-08</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

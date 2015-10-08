@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GattSerialMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GattSerialMessage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/setPayloadLength:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt8 payloadLength</Declaration>
+			
+			
+			<Anchor>//api/name/payloadLength</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/payloadLength</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt8 payloadLength</Declaration>
+			
+			
+			<Anchor>//api/name/payloadLength</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GattSerialMessage/payloadLength</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt8 payloadLength</Declaration>
+			
+			
+			<Anchor>//api/name/payloadLength</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/setReserved:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt8 reserved</Declaration>
+			
+			
+			<Anchor>//api/name/reserved</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/reserved</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt8 reserved</Declaration>
+			
+			
+			<Anchor>//api/name/reserved</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GattSerialMessage/reserved</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt8 reserved</Declaration>
+			
+			
+			<Anchor>//api/name/reserved</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/setPayload:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic, strong) NSData *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/payload</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic, strong) NSData *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GattSerialMessage/payload</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic, strong) NSData *payload</Declaration>
+			
+			
+			<Anchor>//api/name/payload</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/setCrc:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt16 crc</Declaration>
+			
+			
+			<Anchor>//api/name/crc</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/crc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt16 crc</Declaration>
+			
+			
+			<Anchor>//api/name/crc</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GattSerialMessage/crc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) UInt16 crc</Declaration>
+			
+			
+			<Anchor>//api/name/crc</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/initWithData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/initWithData:error:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/initWithPayload:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPayload:(NSData *)payload error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPayload:error:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattSerialMessage/bytes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)bytes</Declaration>
+			
+			
+			<Anchor>//api/name/bytes</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GattSerialMessage/packetCountFromDataLength:packetSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialMessage.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)packetCountFromDataLength:(NSInteger)datalength packetSize:(NSInteger)packetsize</Declaration>
+			
+			
+			<Anchor>//api/name/packetCountFromDataLength:packetSize:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

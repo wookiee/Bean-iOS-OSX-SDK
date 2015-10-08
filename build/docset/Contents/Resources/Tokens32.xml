@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PTDBeanManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PTDBeanManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PTDBeanManager+Protected.h</DeclaredIn>
+            
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PTDBeanManager/bean:hasBeenValidated_error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PTDBeanManager+Protected.h</DeclaredIn>
+			
+			<Declaration>- (void)bean:(PTDBean *)bean hasBeenValidated_error:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/bean:hasBeenValidated_error:</Anchor>
+            <NodeRef refid="32"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

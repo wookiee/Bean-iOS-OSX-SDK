@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GattTransport.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GattTransport</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattTransport/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattTransportDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattTransport/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattTransportDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GattTransport/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattTransportDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattTransport/setCharacteristicHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattCharacteristicHandler&gt; characteristicHandler</Declaration>
+			
+			
+			<Anchor>//api/name/characteristicHandler</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattTransport/characteristicHandler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattCharacteristicHandler&gt; characteristicHandler</Declaration>
+			
+			
+			<Anchor>//api/name/characteristicHandler</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GattTransport/characteristicHandler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;GattCharacteristicHandler&gt; characteristicHandler</Declaration>
+			
+			
+			<Anchor>//api/name/characteristicHandler</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattTransport/initWithCharacteristicHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithCharacteristicHandler:(id&lt;GattCharacteristicHandler&gt;)handler</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCharacteristicHandler:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GattTransport/sendPacket:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattTransport.h</DeclaredIn>
+			
+			<Declaration>- (void)sendPacket:(GattPacket *)packet error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/sendPacket:error:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

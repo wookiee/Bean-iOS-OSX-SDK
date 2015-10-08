@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ProfileDelegate_Protocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ProfileDelegate_Protocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProfileDelegate_Protocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ProfileDelegate_Protocol/profileValidated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ProfileDelegate_Protocol.h</DeclaredIn>
+			
+			<Declaration>- (void)profileValidated:(id&lt;Profile_Protocol&gt;)profile</Declaration>
+			
+			
+			<Anchor>//api/name/profileValidated:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

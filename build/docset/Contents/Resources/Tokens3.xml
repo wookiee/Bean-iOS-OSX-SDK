@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BatteryProfile.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BatteryProfile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BatteryProfile/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;BatteryProfileDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BatteryProfile/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;BatteryProfileDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BatteryProfile/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;BatteryProfileDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BatteryProfile/setBatteryVoltage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *batteryVoltage</Declaration>
+			
+			
+			<Anchor>//api/name/batteryVoltage</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BatteryProfile/batteryVoltage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *batteryVoltage</Declaration>
+			
+			
+			<Anchor>//api/name/batteryVoltage</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BatteryProfile/batteryVoltage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *batteryVoltage</Declaration>
+			
+			
+			<Anchor>//api/name/batteryVoltage</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BatteryProfile/initWithPeripheral:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPeripheral:(CBPeripheral *)aPeripheral delegate:(id&lt;BatteryProfileDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPeripheral:delegate:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BatteryProfile/readBattery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BatteryProfile.h</DeclaredIn>
+			
+			<Declaration>- (void)readBattery</Declaration>
+			
+			
+			<Anchor>//api/name/readBattery</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

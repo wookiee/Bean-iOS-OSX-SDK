@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PTDBeanManagerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Bean iOS/OSX SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Punch Through Design</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/BeanManager:didConnectToBean:error:">- BeanManager:didConnectToBean:error:</option>
+		
+		<option value="//api/name/BeanManager:didDisconnectBean:error:">- BeanManager:didDisconnectBean:error:</option>
+		
+		<option value="//api/name/BeanManager:didDiscoverBean:error:">- BeanManager:didDiscoverBean:error:</option>
+		
+		<option value="//api/name/beanManager:didConnectBean:error:">- beanManager:didConnectBean:error:</option>
+		
+		<option value="//api/name/beanManager:didDisconnectBean:error:">- beanManager:didDisconnectBean:error:</option>
+		
+		<option value="//api/name/beanManager:didDiscoverBean:error:">- beanManager:didDiscoverBean:error:</option>
+		
+		<option value="//api/name/beanManagerDidUpdateState:">- beanManagerDidUpdateState:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PTDBeanManagerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PTDBeanManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Delegates of a <a href="../Classes/PTDBeanManager.html">PTDBeanManager</a> object should implement this protocol. See <a href="http://www.punchthrough.com">BeanXcodeWorkspace</a> for more examples.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/beanManagerDidUpdateState:" title="beanManagerDidUpdateState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beanManagerDidUpdateState:">&ndash;&nbsp;beanManagerDidUpdateState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The BeanManager&rsquo;s <a href="../Constants/BeanManagerState.html">BeanManagerState</a> has been updated. This method will also be called when Bluetooth is enabled or disabled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beanManagerDidUpdateState:(PTDBeanManager *)<em>beanManager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beanManager</code></th>
+						<td><p>the BeanManager whose state was updated</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code> Example:
+ - (void)beanManagerDidUpdateState:(PTDBeanManager *)manager{
+   // if manager is powered on, start scanning
+   if(self.beanManager.state == BeanManagerState_PoweredOn){
+     [self.beanManager startScanningForBeans_error:nil];
+   }
+   else if (self.beanManager.state == BeanManagerState_PoweredOff) {
+     // do something else
+   }
+ }
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBeanManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beanManager:didDiscoverBean:error:" title="beanManager:didDiscoverBean:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beanManager:didDiscoverBean:error:">&ndash;&nbsp;beanManager:didDiscoverBean:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An advertising Bean was discovered.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beanManager:(PTDBeanManager *)<em>beanManager</em> didDiscoverBean:(PTDBean *)<em>bean</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beanManager</code></th>
+						<td><p>The BeanManager scanning for advertising beans</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bean</code></th>
+						<td><p>The Bean that was discovered</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Not implemented yet</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code>Example:
+// Manager letting us know a Bean was discovered
+- (void)BeanManager:(PTDBeanManager*)beanManager didDiscoverBean:(PTDBean*)bean error:(NSError*)error{
+    NSError* connectError;
+    [self.beanManager connectToBean:bean error:&amp;connectError];
+    if (connectError) {
+      NSLog(@"%@", [connectError localizedDescription]);
+    }
+}
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBeanManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BeanManager:didDiscoverBean:error:" title="BeanManager:didDiscoverBean:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BeanManager:didDiscoverBean:error:">&ndash;&nbsp;BeanManager:didDiscoverBean:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is deprecated. Use [PTDBeanManager beanManager:didDiscoverBean:error:] instead. (<b class="deprecated">Deprecated:</b><span class="deprecated"> v0.3.2</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)BeanManager:(PTDBeanManager *)<em>beanManager</em> didDiscoverBean:(PTDBean *)<em>bean</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBeanManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beanManager:didConnectBean:error:" title="beanManager:didConnectBean:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beanManager:didConnectBean:error:">&ndash;&nbsp;beanManager:didConnectBean:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A Bean was connected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beanManager:(PTDBeanManager *)<em>beanManager</em> didConnectBean:(PTDBean *)<em>bean</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beanManager</code></th>
+						<td><p>The BeanManager that connected to an advertising beans</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bean</code></th>
+						<td><p>The Bean that was connected</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>This error is passed through from <a href="https://developer.apple.com/library/mac/documentation/CoreBluetooth/Reference/CBCentralManagerDelegate_Protocol/translated_content/CBCentralManagerDelegate.html#//apple_ref/occ/intfm/CBCentralManagerDelegate/centralManager:didDisconnectPeripheral:error:">centralManager:didFailToConnectPeripheral:error:</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBeanManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BeanManager:didConnectToBean:error:" title="BeanManager:didConnectToBean:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BeanManager:didConnectToBean:error:">&ndash;&nbsp;BeanManager:didConnectToBean:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is deprecated. Use [PTDBeanManager beanManager:didConnectToBean:error:] instead. (<b class="deprecated">Deprecated:</b><span class="deprecated"> v0.3.2</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)BeanManager:(PTDBeanManager *)<em>beanManager</em> didConnectToBean:(PTDBean *)<em>bean</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBeanManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beanManager:didDisconnectBean:error:" title="beanManager:didDisconnectBean:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beanManager:didDisconnectBean:error:">&ndash;&nbsp;beanManager:didDisconnectBean:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A Bean was disconnected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beanManager:(PTDBeanManager *)<em>beanManager</em> didDisconnectBean:(PTDBean *)<em>bean</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beanManager</code></th>
+						<td><p>The BeanManager that lost connection with the Bean</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bean</code></th>
+						<td><p>The Bean that was disconnect</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>This error is passed through from <a href="https://developer.apple.com/library/mac/documentation/CoreBluetooth/Reference/CBCentralManagerDelegate_Protocol/translated_content/CBCentralManagerDelegate.html#//apple_ref/occ/intfm/CBCentralManagerDelegate/centralManager:didDisconnectPeripheral:error:">centralManager:didDisconnectPeripheral:error:</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBeanManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/BeanManager:didDisconnectBean:error:" title="BeanManager:didDisconnectBean:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/BeanManager:didDisconnectBean:error:">&ndash;&nbsp;BeanManager:didDisconnectBean:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is deprecated. Use [PTDBeanManager beanManager:didDisconnectBean:error:] instead. (<b class="deprecated">Deprecated:</b><span class="deprecated"> v0.3.2</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)BeanManager:(PTDBeanManager *)<em>beanManager</em> didDisconnectBean:(PTDBean *)<em>bean</em> error:(NSError *)<em>error</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBeanManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Punch Through Design. All rights reserved. Updated: 2015-10-08</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

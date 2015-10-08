@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/swstack/Library/Developer/Shared/Documentation/DocSets/com.test.test.test.docset
+Time: 2015-10-06 20:51:15 +0000

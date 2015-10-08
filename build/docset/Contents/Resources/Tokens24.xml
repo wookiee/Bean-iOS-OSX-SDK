@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GattCharacteristicHandler.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GattCharacteristicHandler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattCharacteristicHandler.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GattCharacteristicHandler/user:hasDataForTransmission:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattCharacteristicHandler.h</DeclaredIn>
+			
+			<Declaration>- (void)user:(id&lt;GattCharacteristicObserver&gt;)user hasDataForTransmission:(NSData *)data error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/user:hasDataForTransmission:error:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

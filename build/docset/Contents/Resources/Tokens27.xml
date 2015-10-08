@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/GattSerialTransportDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/GattSerialTransportDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GattSerialTransportDelegate/GattSerialTransport_error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+			
+			<Declaration>- (void)GattSerialTransport_error:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/GattSerialTransport_error:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/GattSerialTransportDelegate/GattSerialTransport_messageReceived:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GattSerialTransport.h</DeclaredIn>
+			
+			<Declaration>- (void)GattSerialTransport_messageReceived:(GattSerialMessage *)message</Declaration>
+			
+			
+			<Anchor>//api/name/GattSerialTransport_messageReceived:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

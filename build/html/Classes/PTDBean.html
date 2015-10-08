@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PTDBean Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Bean iOS/OSX SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Punch Through Design</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/RSSI">RSSI</option>
+		
+		<option value="//api/name/advertisementData">advertisementData</option>
+		
+		<option value="//api/name/arduinoPowerState">arduinoPowerState</option>
+		
+		<option value="//api/name/batteryVoltage">batteryVoltage</option>
+		
+		<option value="//api/name/beanManager">beanManager</option>
+		
+		<option value="//api/name/dateProgrammed">dateProgrammed</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/firmwareVersion">firmwareVersion</option>
+		
+		<option value="//api/name/identifier">identifier</option>
+		
+		<option value="//api/name/lastDiscovered">lastDiscovered</option>
+		
+		<option value="//api/name/name">name</option>
+		
+		<option value="//api/name/radioConfig">radioConfig</option>
+		
+		<option value="//api/name/sketchName">sketchName</option>
+		
+		<option value="//api/name/state">state</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithPeripheral:beanManager:">- initWithPeripheral:beanManager:</option>
+		
+		<option value="//api/name/interrogateAndValidate">- interrogateAndValidate</option>
+		
+		<option value="//api/name/isEqualToBean:">- isEqualToBean:</option>
+		
+		<option value="//api/name/peripheral">- peripheral</option>
+		
+		<option value="//api/name/programArduinoWithRawHexImage:andImageName:">- programArduinoWithRawHexImage:andImageName:</option>
+		
+		<option value="//api/name/readAccelerationAxes">- readAccelerationAxes</option>
+		
+		<option value="//api/name/readAccelerationAxis">- readAccelerationAxis</option>
+		
+		<option value="//api/name/readArduinoPowerState">- readArduinoPowerState</option>
+		
+		<option value="//api/name/readArduinoSketchInfo">- readArduinoSketchInfo</option>
+		
+		<option value="//api/name/readBatteryVoltage">- readBatteryVoltage</option>
+		
+		<option value="//api/name/readLedColor">- readLedColor</option>
+		
+		<option value="//api/name/readRSSI">- readRSSI</option>
+		
+		<option value="//api/name/readRadioConfig">- readRadioConfig</option>
+		
+		<option value="//api/name/readScratchBank:">- readScratchBank:</option>
+		
+		<option value="//api/name/readTemperature">- readTemperature</option>
+		
+		<option value="//api/name/releaseSerialGate">- releaseSerialGate</option>
+		
+		<option value="//api/name/sendSerialData:">- sendSerialData:</option>
+		
+		<option value="//api/name/sendSerialString:">- sendSerialString:</option>
+		
+		<option value="//api/name/setAdvertisementData:">- setAdvertisementData:</option>
+		
+		<option value="//api/name/setArduinoPowerState:">- setArduinoPowerState:</option>
+		
+		<option value="//api/name/setBeanManager:">- setBeanManager:</option>
+		
+		<option value="//api/name/setLastDiscovered:">- setLastDiscovered:</option>
+		
+		<option value="//api/name/setLedColor:">- setLedColor:</option>
+		
+		<option value="//api/name/setPairingPin:">- setPairingPin:</option>
+		
+		<option value="//api/name/setRSSI:">- setRSSI:</option>
+		
+		<option value="//api/name/setRadioConfig:">- setRadioConfig:</option>
+		
+		<option value="//api/name/setScratchBank:data:">- setScratchBank:data:</option>
+		
+		<option value="//api/name/setScratchNumber:withValue:">- setScratchNumber:withValue:</option>
+		
+		<option value="//api/name/setState:">- setState:</option>
+		
+		<option value="//api/name/updateFirmwareWithImageAPath:andImageBPath:">- updateFirmwareWithImageAPath:andImageBPath:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PTDBean Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/PTDBleDevice.html">PTDBleDevice</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PTDBean.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>   An PTDBean object represents a Light Blue Bean that gives access to setting and retrieving of Arduino attributes, such as the name, temperature, accelerometer, look at Other Methods below for more.</p>
+
+<pre><code>Example:
+// Set this class as the Bean's delegate to receive messages
+self.bean.delegate = self;
+// ask the Bean for the current ambient temperature
+[self.bean readTemperature];
+
+// This is called when the Bean responds
+-(void)bean:(PTDBean *)bean didUpdateTemperature:(NSNumber *)degrees_celsius {
+  NSString *msg = [NSString stringWithFormat:@"received did update temp reading:%@", degrees_celsius];
+  NSLog(@"%@",msg);
+}
+</code></pre>
+
+<p>   See <a href="http://www.punchthrough.com">BeanXcodeWorkspace</a> for more examples.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Identifying a Bean" name="task_Identifying a Bean"></a>
+						<h2 class="task-title">Identifying a Bean</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/identifier" title="identifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/identifier">&nbsp;&nbsp;identifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The UUID of the CoreBluetooth <a href="#//api/name/peripheral">peripheral</a> associated with the Bean. This is not guaranteed to be the same between different devices. If a bluetooth cache is cleared, this UUID is not guaranteed to stay the same.
+For more info, refer to the <a href="https://developer.apple.com/library/ios/documentation/CoreBluetooth/Reference/CBPeripheral_Class/translated_content/CBPeripheral.html#//apple_ref/occ/instp/CBPeripheral/identifier">Apple identifier documentation</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUUID *identifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Bean&rsquo;s name.
+For more info, refer to the <a href="https://developer.apple.com/library/ios/documentation/CoreBluetooth/Reference/CBPeripheral_Class/translated_content/CBPeripheral.html#//apple_ref/occ/instp/CBPeripheral/name">Apple name documentation</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *name</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The <a href="../Protocols/PTDBeanDelegate.html">PTDBeanDelegate</a> delegate object for the Bean. Set your class as the delegate to receive messages and responses from the Bean.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;PTDBeanDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beanManager" title="beanManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beanManager">&nbsp;&nbsp;beanManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used to create and manage Beans.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) PTDBeanManager *beanManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/PTDBeanManager.html">PTDBeanManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/advertisementData" title="advertisementData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/advertisementData">&nbsp;&nbsp;advertisementData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Bluetooth LE advertising data. A dictionary containing <a href="https://developer.apple.com/library/ios/documentation/CoreBluetooth/Reference/CBCentralManagerDelegate_Protocol/translated_content/CBCentralManagerDelegate.html">CBAdvertisementDataLocalNameKey</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDictionary *advertisementData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/firmwareVersion" title="firmwareVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/firmwareVersion">&nbsp;&nbsp;firmwareVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The version of the Bean&rsquo;s current firmware.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *firmwareVersion</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastDiscovered" title="lastDiscovered"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastDiscovered">&nbsp;&nbsp;lastDiscovered</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Represents last time this Bean was discovered while scanning.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *lastDiscovered</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEqualToBean:" title="isEqualToBean:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEqualToBean:">&ndash;&nbsp;isEqualToBean:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Test equality with another Bean. This method returns TRUE if both Beans have the same <a href="#//api/name/identifier">identifier</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToBean:(PTDBean *)<em>bean</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bean</code></th>
+						<td><p>The Bean with which to test equality</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Security" name="task_Security"></a>
+						<h2 class="task-title">Security</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setPairingPin:" title="setPairingPin:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPairingPin:">&ndash;&nbsp;setPairingPin:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets or clears a Bluetooth pairing pin. This operation can only be used if the Bean is connected. The pairing pin will be cleared/disabled if pinCode is a null pointer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setPairingPin:(NSUInteger *)<em>pinCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pinCode</code></th>
+						<td><p>Bluetooth pairing pin with value between 0 and 999,999 (zero padded 6 digit positive integer). Use a null pointer to clear/disable pairing pin.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A Boolean indicating if the operation was successful.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Monitoring a Bean&apos;s Connection State" name="task_Monitoring a Bean&apos;s Connection State"></a>
+						<h2 class="task-title">Monitoring a Bean&apos;s Connection State</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/state" title="state"></a>
+	<h3 class="method-title"><code><a href="#//api/name/state">&nbsp;&nbsp;state</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current connection state of the Bean. See <a href="../Constants/BeanState.html">BeanState</a> for more details.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BeanState state</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code> if (self.bean.state == BeanState_Discovered) {
+    NSLog(@"Bean discovered, try connecting");
+ }
+ else if (self.bean.state == BeanState_ConnectedAndValidated) {
+    NSLog(@"Bean connected, try calling an API");
+ }
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Radio Configuration" name="task_Radio Configuration"></a>
+						<h2 class="task-title">Radio Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/radioConfig" title="radioConfig"></a>
+	<h3 class="method-title"><code><a href="#//api/name/radioConfig">&nbsp;&nbsp;radioConfig</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cached data for Bean&rsquo;s Radio Configuration. Should call <a href="#//api/name/readRadioConfig">readRadioConfig</a> first to ensure this data is fresh.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) PTDBeanRadioConfig *radioConfig</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/readRadioConfig">[PTDBean readRadioConfig]</a></p></code></li>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateRadioConfig:">[PTDBeanDelegate bean:didUpdateRadioConfig:]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/PTDBeanRadioConfig.html">PTDBeanRadioConfig</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readRadioConfig" title="readRadioConfig"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readRadioConfig">&ndash;&nbsp;readRadioConfig</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Bean&rsquo;s current Radio Configuration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readRadioConfig</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read the Bean&rsquo;s Radio Configuration, the bean calls the <a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateRadioConfig:">[PTDBeanDelegate bean:didUpdateRadioConfig:]</a> method of its <a href="#//api/name/delegate">delegate</a> object. If the Bean&rsquo;s Radio Config is successfully retrieved, you can access it through the Bean&rsquo;s <a href="#//api/name/radioConfig">radioConfig</a> property.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateRadioConfig:">[PTDBeanDelegate bean:didUpdateRadioConfig:]</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/PTDBeanRadioConfig.html">PTDBeanRadioConfig</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRadioConfig:" title="setRadioConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRadioConfig:">&ndash;&nbsp;setRadioConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the Bean&rsquo;s radio configuration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRadioConfig:(PTDBeanRadioConfig *)<em>config</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>config</code></th>
+						<td><p>see <a href="../Classes/PTDBeanRadioConfig.html">PTDBeanRadioConfig</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing a Bean&apos;s Received Signal Strength Indicator (RSSI) Data" name="task_Accessing a Bean&apos;s Received Signal Strength Indicator (RSSI) Data"></a>
+						<h2 class="task-title">Accessing a Bean&apos;s Received Signal Strength Indicator (RSSI) Data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/readRSSI" title="readRSSI"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readRSSI">&ndash;&nbsp;readRSSI</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Bean&rsquo;s current <a href="#//api/name/RSSI">RSSI</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readRSSI</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read the Bean&rsquo;s RSSI, the bean calls the <a href="../Protocols/PTDBeanDelegate.html#//api/name/beanDidUpdateRSSI:error:">[PTDBeanDelegate beanDidUpdateRSSI:error:]</a> method of its <a href="#//api/name/delegate">delegate</a> object. If the Bean&rsquo;s <a href="#//api/name/RSSI">RSSI</a> is successfully retrieved, you can access it through the Bean&rsquo;s <a href="#//api/name/RSSI">RSSI</a> property.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/beanDidUpdateRSSI:error:">[PTDBeanDelegate beanDidUpdateRSSI:error:]</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/RSSI">@property RSSI</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/RSSI" title="RSSI"></a>
+	<h3 class="method-title"><code><a href="#//api/name/RSSI">&nbsp;&nbsp;RSSI</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Bean&rsquo;s RSSI.
+For more info, refer to the <a href="https://developer.apple.com/library/ios/documentation/CoreBluetooth/Reference/CBPeripheral_Class/translated_content/CBPeripheral.html#//apple_ref/occ/instp/CBPeripheral/RSSI">Apple RSSI documentation</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *RSSI</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Programming and Configuring Arduino" name="task_Programming and Configuring Arduino"></a>
+						<h2 class="task-title">Programming and Configuring Arduino</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/arduinoPowerState" title="arduinoPowerState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/arduinoPowerState">&nbsp;&nbsp;arduinoPowerState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The power <a href="#//api/name/state">state</a> for the Bean&rsquo;s Arduino. Indicates if the Arduino is powered on or off.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) ArduinoPowerState arduinoPowerState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Constants/ArduinoPowerState.html">ArduinoPowerState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setArduinoPowerState:" title="setArduinoPowerState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setArduinoPowerState:">&ndash;&nbsp;setArduinoPowerState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Temporarily turns the Bean&rsquo;s Arduino on or off.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setArduinoPowerState:(ArduinoPowerState)<em>state</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>&quot;YES&quot;</code></th>
+						<td><p>sets the Arduino to a powered-on <a href="#//api/name/state">state</a> and &ldquo;NO&rdquo; is a shutdown <a href="#//api/name/state">state</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readArduinoPowerState" title="readArduinoPowerState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readArduinoPowerState">&ndash;&nbsp;readArduinoPowerState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the current Arduino power <a href="#//api/name/state">state</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readArduinoPowerState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read the Arduino Power State, the bean calls the <a href="../Protocols/PTDBeanDelegate.html#//api/name/beanDidUpdateArduinoPowerState:">[PTDBeanDelegate beanDidUpdateArduinoPowerState:]</a> method of its <a href="#//api/name/delegate">delegate</a> object. If the Arduino&rsquo;s Power State is successfully retrieved, you can access it through the Bean&rsquo;s <a href="#//api/name/arduinoPowerState">arduinoPowerState</a> property.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/beanDidUpdateArduinoPowerState:">[PTDBeanDelegate beanDidUpdateArduinoPowerState:]</a></p></code></li>
+					
+					<li><code><p><a href="#//api/name/arduinoPowerState">@property arduinoPowerState</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/programArduinoWithRawHexImage:andImageName:" title="programArduinoWithRawHexImage:andImageName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/programArduinoWithRawHexImage:andImageName:">&ndash;&nbsp;programArduinoWithRawHexImage:andImageName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Programs the Arduino with raw binary data. (Not Intel Hex)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)programArduinoWithRawHexImage:(NSData *)<em>image</em> andImageName:(NSString *)<em>name</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>The raw binary image used to program the Arduino</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The <a href="#//api/name/name">name</a> of the sketch.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>After the Arduino is programmed, the Bean calls the <a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didProgramArduinoWithError:">[PTDBeanDelegate bean:didProgramArduinoWithError:]</a> method of its <a href="#//api/name/delegate">delegate</a> object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didProgramArduinoWithError:">[PTDBeanDelegate bean:didProgramArduinoWithError:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readArduinoSketchInfo" title="readArduinoSketchInfo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readArduinoSketchInfo">&ndash;&nbsp;readArduinoSketchInfo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests information about the currently programmed Arduino Sketch.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readArduinoSketchInfo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read the Arduino sketch info, the bean calls the [PTDBeanDelegate beanDid:didUpdateSketchName:dateProgrammed:crc32:] method of its <a href="#//api/name/delegate">delegate</a> object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateSketchName:dateProgrammed:crc32:">[PTDBeanDelegate bean:didUpdateSketchName:dateProgrammed:crc32:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sketchName" title="sketchName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sketchName">&nbsp;&nbsp;sketchName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The <a href="#//api/name/name">name</a> of the Arduino Sketch used to program the Bean firmware. Should call <readArduinoSketchinfo> first to ensure this data is fresh.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *sketchName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateProgrammed" title="dateProgrammed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateProgrammed">&nbsp;&nbsp;dateProgrammed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The date that the Bean&rsquo;s Arduino sketch was programmed. Should call <readArduinoSketchinfo> first to ensure this data is fresh.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSDate *dateProgrammed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing Battery Voltage" name="task_Accessing Battery Voltage"></a>
+						<h2 class="task-title">Accessing Battery Voltage</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/readBatteryVoltage" title="readBatteryVoltage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readBatteryVoltage">&ndash;&nbsp;readBatteryVoltage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the current battery or power supply voltage.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readBatteryVoltage</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read the battery or power supply voltage, the bean calls the [PTDBeanDelegate bean:didUpdateBattery:] method of its <a href="#//api/name/delegate">delegate</a> object. If the Bean&rsquo;s supply voltage is successfully retrieved, you can access it through the Bean&rsquo;s <a href="#//api/name/batteryVoltage">batteryVoltage</a> property.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/batteryVoltage">@property batteryVoltage</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/batteryVoltage" title="batteryVoltage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/batteryVoltage">&nbsp;&nbsp;batteryVoltage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cached representation of the Bean&rsquo;s battery or power supply voltage. Should call <a href="#//api/name/readBatteryVoltage">readBatteryVoltage</a> first to ensure this data is fresh.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *batteryVoltage</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing LED colors" name="task_Accessing LED colors"></a>
+						<h2 class="task-title">Accessing LED colors</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setLedColor:" title="setLedColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLedColor:">&ndash;&nbsp;setLedColor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the Bean&rsquo;s RGB LED color</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLedColor:(UIColor *)<em>color</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>Color object which is used to set the Led. iOS uses UIColor, while OS X uses NSColor.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateLedColor:">[PTDBeanDelegate bean:didUpdateLedColor:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readLedColor" title="readLedColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readLedColor">&ndash;&nbsp;readLedColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Bean&rsquo;s current Led Color.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readLedColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read the LED values, the bean calls the <a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateLedColor:">[PTDBeanDelegate bean:didUpdateLedColor:]</a> method of its <a href="#//api/name/delegate">delegate</a> object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateLedColor:">[PTDBeanDelegate bean:didUpdateLedColor:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Sending Serial Data" name="task_Sending Serial Data"></a>
+						<h2 class="task-title">Sending Serial Data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendSerialData:" title="sendSerialData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendSerialData:">&ndash;&nbsp;sendSerialData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends data over serial to the Bean&rsquo;s Arduino</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendSerialData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>data to send over serial to the Arduino</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:serialDataReceived:">[PTDBeanDelegate bean:serialDataReceived:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendSerialString:" title="sendSerialString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendSerialString:">&ndash;&nbsp;sendSerialString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends human-readable ASCII data over serial to the Bean&rsquo;s Arduino</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendSerialString:(NSString *)<em>string</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>An NSString which is converted to NSData for sending over serial to the Bean&rsquo;s Arduino</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:serialDataReceived:">[PTDBeanDelegate bean:serialDataReceived:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/releaseSerialGate" title="releaseSerialGate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/releaseSerialGate">&ndash;&nbsp;releaseSerialGate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows you to bypass the delay where serial data is not allowed to pass through the bean during early connection.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)releaseSerialGate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing Acceleration Data" name="task_Accessing Acceleration Data"></a>
+						<h2 class="task-title">Accessing Acceleration Data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/readAccelerationAxes" title="readAccelerationAxes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readAccelerationAxes">&ndash;&nbsp;readAccelerationAxes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Bean&rsquo;s current acceleration values</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readAccelerationAxes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read the Acceleration, the bean calls the <a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateAccelerationAxes:">[PTDBeanDelegate bean:didUpdateAccelerationAxes:]</a> method of its delegate object.</p>
+
+<pre><code>Example:
+// let the Bean know we implement PTDBeanDelegate
+self.bean.delegate = self;
+// ask the Bean for the acceleration data
+[self.bean readAccelerationAxes];
+
+// check for the Bean to send it back
+-(void)bean:(PTDBean*)bean didUpdateAccelerationAxes:(PTDAcceleration)acceleration {
+    NSString *msg = [NSString stringWithFormat:@"x:%f y:%f z:%f", acceleration.x,acceleration.y,acceleration.z];
+    NSLog(@"%@", msg);
+}
+</code></pre>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateAccelerationAxes:">[PTDBeanDelegate bean:didUpdateAccelerationAxes:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readAccelerationAxis" title="readAccelerationAxis"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readAccelerationAxis">&ndash;&nbsp;readAccelerationAxis</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is deprecated. Use <a href="#//api/name/readAccelerationAxes">[PTDBean readAccelerationAxes]</a> instead. (<b class="deprecated">Deprecated:</b><span class="deprecated"> v0.3.2</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readAccelerationAxis</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing &quot;Scratch&quot; Data" name="task_Accessing &quot;Scratch&quot; Data"></a>
+						<h2 class="task-title">Accessing &quot;Scratch&quot; Data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setScratchBank:data:" title="setScratchBank:data:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScratchBank:data:">&ndash;&nbsp;setScratchBank:data:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>   Stores data in one of the Bean&rsquo;s scratch banks.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScratchBank:(NSInteger)<em>bank</em> data:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bank</code></th>
+						<td><p>The index of the scratch bank to store data, from 1 to 5.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>Data to be stored in the selected bank. Can be up to 20 bytes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<pre><code>Example:
+// set the scratch bank, 1-5
+int scratchNumber = 1
+// set the scratch data
+[self.bean setScratchNumber:scratchNumber withValue:[@"scratchdata" dataUsingEncoding:NSUTF8StringEncoding]];
+// after some time, ask for it back
+[self.bean readScratchBank:scratchNumber];
+
+// check the delegate value
+-(void)bean:(PTDBean *)bean didUpdateScratchNumber:(NSNumber *)number withValue:(NSData *)data {
+  NSString* str = [NSString stringWithUTF8String:[data bytes]];
+  NSString *msg = [NSString stringWithFormat:@"received scratch number:%@ scratch:%@", number, str];
+  NSLog(@"%@", msg);
+}
+</code></pre>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/readScratchBank:">[PTDBean readScratchBank:]</a>;</p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScratchNumber:withValue:" title="setScratchNumber:withValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScratchNumber:withValue:">&ndash;&nbsp;setScratchNumber:withValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is deprecated. Use <a href="#//api/name/setScratchBank:data:">[PTDBean setScratchBank:data:]</a> instead. (<b class="deprecated">Deprecated:</b><span class="deprecated"> v0.3.2</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScratchNumber:(NSInteger)<em>scratchNumber</em> withValue:(NSData *)<em>value</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readScratchBank:" title="readScratchBank:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readScratchBank:">&ndash;&nbsp;readScratchBank:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests Bean&rsquo;s current scratch bank data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readScratchBank:(NSInteger)<em>bank</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>The</code></th>
+						<td><p>index of the scratch bank to request, from 1 to 5.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read one of the Bean&rsquo;s scratch banks, the bean calls the <a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateScratchNumber:withValue:">[PTDBeanDelegate bean:didUpdateScratchNumber:withValue:]</a> method of its <a href="#//api/name/delegate">delegate</a> object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateScratchNumber:withValue:">[PTDBeanDelegate bean:didUpdateScratchNumber:withValue:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing Temperature Data" name="task_Accessing Temperature Data"></a>
+						<h2 class="task-title">Accessing Temperature Data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/readTemperature" title="readTemperature"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readTemperature">&ndash;&nbsp;readTemperature</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests the Bean&rsquo;s current temperature reading in Celsius.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)readTemperature</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When you call this method to read the Bean&rsquo;s temperature, the bean calls the <a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateTemperature:">[PTDBeanDelegate bean:didUpdateTemperature:]</a> method of its <a href="#//api/name/delegate">delegate</a> object.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/PTDBeanDelegate.html#//api/name/bean:didUpdateTemperature:">[PTDBeanDelegate bean:didUpdateTemperature:]</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PTDBean.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Protected Methods" name="task_Protected Methods"></a>
+						<h2 class="task-title">Protected Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithPeripheral:beanManager:" title="initWithPeripheral:beanManager:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithPeripheral:beanManager:">&ndash;&nbsp;initWithPeripheral:beanManager:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithPeripheral:(CBPeripheral *)<em>peripheral</em> beanManager:(id&lt;PTDBeanManager&gt;)<em>manager</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/interrogateAndValidate" title="interrogateAndValidate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/interrogateAndValidate">&ndash;&nbsp;interrogateAndValidate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)interrogateAndValidate</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/peripheral" title="peripheral"></a>
+	<h3 class="method-title"><code><a href="#//api/name/peripheral">&ndash;&nbsp;peripheral</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (CBPeripheral *)peripheral</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setState:" title="setState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setState:">&ndash;&nbsp;setState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setState:(BeanState)<em>state</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRSSI:" title="setRSSI:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRSSI:">&ndash;&nbsp;setRSSI:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setRSSI:(NSNumber *)<em>rssi</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAdvertisementData:" title="setAdvertisementData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAdvertisementData:">&ndash;&nbsp;setAdvertisementData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setAdvertisementData:(NSDictionary *)<em>adData</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLastDiscovered:" title="setLastDiscovered:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLastDiscovered:">&ndash;&nbsp;setLastDiscovered:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setLastDiscovered:(NSDate *)<em>date</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBeanManager:" title="setBeanManager:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBeanManager:">&ndash;&nbsp;setBeanManager:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setBeanManager:(id&lt;PTDBeanManager&gt;)<em>manager</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateFirmwareWithImageAPath:andImageBPath:" title="updateFirmwareWithImageAPath:andImageBPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateFirmwareWithImageAPath:andImageBPath:">&ndash;&nbsp;updateFirmwareWithImageAPath:andImageBPath:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)updateFirmwareWithImageAPath:(NSString *)<em>imageApath</em> andImageBPath:(NSString *)<em>imageBpath</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Punch Through Design. All rights reserved. Updated: 2015-10-08</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

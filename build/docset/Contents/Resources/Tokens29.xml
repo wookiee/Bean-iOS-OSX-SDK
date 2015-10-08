@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/OAD_Delegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/OAD_Delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OadProfile.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OAD_Delegate/device:firmwareVersion:isNewer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OadProfile.h</DeclaredIn>
+			
+			<Declaration>- (void)device:(OadProfile *)device firmwareVersion:(NSString *)version isNewer:(BOOL)isNewer</Declaration>
+			
+			
+			<Anchor>//api/name/device:firmwareVersion:isNewer:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OAD_Delegate/device:completedFirmwareUploadWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OadProfile.h</DeclaredIn>
+			
+			<Declaration>- (void)device:(OadProfile *)device completedFirmwareUploadWithError:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/device:completedFirmwareUploadWithError:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/OAD_Delegate/device:OADUploadTimeLeft:withPercentage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OadProfile.h</DeclaredIn>
+			
+			<Declaration>- (void)device:(OadProfile *)device OADUploadTimeLeft:(NSNumber *)seconds withPercentage:(NSNumber *)percentageComplete</Declaration>
+			
+			
+			<Anchor>//api/name/device:OADUploadTimeLeft:withPercentage:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

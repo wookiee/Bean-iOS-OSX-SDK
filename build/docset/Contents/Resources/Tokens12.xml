@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OadProfile.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OadProfile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OadProfile.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OadProfile/initWithPeripheral:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OadProfile.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPeripheral:(CBPeripheral *)aPeripheral delegate:(id&lt;OAD_Delegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPeripheral:delegate:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OadProfile/updateFirmwareWithImageAPath:andImageBPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OadProfile.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)updateFirmwareWithImageAPath:(NSString *)imageApath andImageBPath:(NSString *)imageBpath</Declaration>
+			
+			
+			<Anchor>//api/name/updateFirmwareWithImageAPath:andImageBPath:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OadProfile/cancelUpdateFirmware</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>OadProfile.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelUpdateFirmware</Declaration>
+			
+			
+			<Anchor>//api/name/cancelUpdateFirmware</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

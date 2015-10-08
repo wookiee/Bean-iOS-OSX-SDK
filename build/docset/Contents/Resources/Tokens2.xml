@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BEAN_Helper.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BEAN_Helper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/formatNumberFromString:WithMaxFractionalDigits:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (NSNumber *)formatNumberFromString:(NSString *)text WithMaxFractionalDigits:(NSInteger)frac</Declaration>
+			
+			
+			<Anchor>//api/name/formatNumberFromString:WithMaxFractionalDigits:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/formatStringfromNumber:WithMaxFractionalDigits:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)formatStringfromNumber:(NSNumber *)value WithMaxFractionalDigits:(NSInteger)frac</Declaration>
+			
+			
+			<Anchor>//api/name/formatStringfromNumber:WithMaxFractionalDigits:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/hexStringToData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *)hexStringToData:(NSString *)command</Declaration>
+			
+			
+			<Anchor>//api/name/hexStringToData:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/CBUUIDToString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (const char *)CBUUIDToString:(CBUUID *)UUID</Declaration>
+			
+			
+			<Anchor>//api/name/CBUUIDToString:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/UUIDToNSString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)UUIDToNSString:(CFUUIDRef)UUID</Declaration>
+			
+			
+			<Anchor>//api/name/UUIDToNSString:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/basicError:domain:code:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (NSError *)basicError:(NSString *)description domain:(NSString *)description code:(BeanErrors)code</Declaration>
+			
+			
+			<Anchor>//api/name/basicError:domain:code:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/computeCRC16:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (UInt16)computeCRC16:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/computeCRC16:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/computeCRC16:startingCRC:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (UInt16)computeCRC16:(NSData *)data startingCRC:(UInt16)startCrc</Declaration>
+			
+			
+			<Anchor>//api/name/computeCRC16:startingCRC:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/BEAN_Helper/dummyData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BEAN_Helper.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *)dummyData:(NSInteger)length</Declaration>
+			
+			
+			<Anchor>//api/name/dummyData:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BleProfile.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BleProfile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BleProfile/setProfileDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ProfileDelegate_Protocol&gt; profileDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/profileDelegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BleProfile/profileDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ProfileDelegate_Protocol&gt; profileDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/profileDelegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BleProfile/profileDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;ProfileDelegate_Protocol&gt; profileDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/profileDelegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BleProfile/setIsRequired:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isRequired</Declaration>
+			
+			
+			<Anchor>//api/name/isRequired</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BleProfile/isRequired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isRequired</Declaration>
+			
+			
+			<Anchor>//api/name/isRequired</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BleProfile/isRequired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isRequired</Declaration>
+			
+			
+			<Anchor>//api/name/isRequired</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BleProfile/validate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>- (void)validate</Declaration>
+			
+			
+			<Anchor>//api/name/validate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BleProfile/isValid:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValid:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/isValid:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BleProfile/__notifyValidity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BleProfile.h</DeclaredIn>
+			
+			<Declaration>- (void)__notifyValidity</Declaration>
+			
+			
+			<Anchor>//api/name/__notifyValidity</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

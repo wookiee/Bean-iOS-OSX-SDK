@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AppMessagingLayerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AppMessagingLayerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppMessagingLayer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AppMessagingLayerDelegate/appMessagingLayer:recievedIncomingMessageWithID:andPayload:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppMessagingLayer.h</DeclaredIn>
+			
+			<Declaration>- (void)appMessagingLayer:(AppMessagingLayer *)layer recievedIncomingMessageWithID:(UInt16)identifier andPayload:(NSData *)payload</Declaration>
+			
+			
+			<Anchor>//api/name/appMessagingLayer:recievedIncomingMessageWithID:andPayload:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AppMessagingLayerDelegate/appMessagingLayer:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AppMessagingLayer.h</DeclaredIn>
+			
+			<Declaration>- (void)appMessagingLayer:(AppMessagingLayer *)later error:(NSError *)error</Declaration>
+			
+			
+			<Anchor>//api/name/appMessagingLayer:error:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
