@@ -103,6 +103,8 @@
 		969FDE9A191A9E190068B99A /* PTDBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 969FDE94191A9DE80068B99A /* PTDBean.m */; };
 		969FDE9B191A9E1E0068B99A /* PTDBeanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 969FDE95191A9DE80068B99A /* PTDBeanManager.m */; };
 		969FDE9C191A9E200068B99A /* PTDBeanRadioConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 969FDE96191A9DE80068B99A /* PTDBeanRadioConfig.m */; };
+		A6605CDC1CADDBF900007EB3 /* PTDFirmwareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 364BD5221C8F46F80065893B /* PTDFirmwareHelper.m */; };
+		A6605CDF1CADDC5400007EB3 /* PTDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 364BD5261C8F47690065893B /* PTDUtils.m */; };
 		A9448BF11C7B94DE0031DA2C /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DE25C018AAC53900E69929 /* IOBluetooth.framework */; };
 		A94C7A6B1C7CC89B0018A161 /* blink.hex in Resources */ = {isa = PBXBuildFile; fileRef = A94C7A6A1C7CC89B0018A161 /* blink.hex */; };
 		A99DECD01C7F4B32007F506D /* Firmware Images in Resources */ = {isa = PBXBuildFile; fileRef = A99DECCF1C7F4B32007F506D /* Firmware Images */; };
@@ -827,6 +829,7 @@
 				520C8EE0191C31970086C530 /* BleProfile.m in Sources */,
 				520C8EDE191C31780086C530 /* NSData+CRC.m in Sources */,
 				969FDE9C191A9E200068B99A /* PTDBeanRadioConfig.m in Sources */,
+				A6605CDF1CADDC5400007EB3 /* PTDUtils.m in Sources */,
 				969B897F1908971000AA093C /* AppMessagingLayer.m in Sources */,
 				969B89811908971000AA093C /* CBPeripheral+UniqueId.m in Sources */,
 				969B89851908971000AA093C /* DevInfoProfile.m in Sources */,
@@ -837,6 +840,7 @@
 				969B898F1908971000AA093C /* GattSerialMessageRxAssembler.m in Sources */,
 				520A7E161AA0034500CB5B80 /* CBPeripheral+RSSI_Universal.m in Sources */,
 				969B89911908971000AA093C /* GattTransport.m in Sources */,
+				A6605CDC1CADDBF900007EB3 /* PTDFirmwareHelper.m in Sources */,
 				969FDE9B191A9E1E0068B99A /* PTDBeanManager.m in Sources */,
 				969B89931908971000AA093C /* GattPacket.m in Sources */,
 				969FDE9A191A9E190068B99A /* PTDBean.m in Sources */,
